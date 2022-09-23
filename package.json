@@ -1,0 +1,49 @@
+{
+  "name": "vite-plugin-utools-helper",
+  "version": "0.0.1",
+  "description": "使用 `Vite` 开发和编译 `utools` 插件",
+  "author": "csj8520",
+  "license": "MIT",
+  "homepage": "https://github.com/csj8520/vite-plugin-utools-helper#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csj8520/vite-plugin-utools-helper.git"
+  },
+  "bugs": "https://github.com/csj8520/vite-plugin-utools-helper/issues",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "start": "node ./dist/index.js",
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "utools",
+    "vite"
+  ],
+  "peerDependencies": {
+    "vite": "^3.1.3"
+  },
+  "dependencies": {
+    "asar": "^3.2.0",
+    "mlly": "^0.5.16",
+    "vite": "^3.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.3"
+  }
+}
