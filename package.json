@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-utools-helper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "使用 `Vite` 开发和编译 `utools` 插件",
   "author": "csj8520",
   "license": "MIT",
