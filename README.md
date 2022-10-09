@@ -91,6 +91,24 @@ declare interface Window {
 
 ### 5. 执行 `npm run start` | `npm run build`
 
-### 5. 修改 utools 开发者工具配置
+### 6. 修改 utools 开发者工具配置
 
 重新选择 `plugin.json` 路径为 `./dist/plugin.json`
+
+## 添加 utools api 的类型定义
+
+```sh
+npm i utools-api-types -D
+```
+
+### 修改 tsconfig.json
+
+添加如下内容
+
+```json
+{
+  "compilerOptions": {
+    "types": ["utools-api-types"]
+  }
+}
+```
