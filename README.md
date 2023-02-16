@@ -72,7 +72,7 @@ export default defineConfig({
   "main": "index.html", // 固定路径
   "preload": "preload.js", // 固定路径
   "development": {
-    "main": "http://127.0.0.1:3100", // 端口和 vite.config.ts 保持一致
+    "main": "http://localhost:3100", // 端口和 vite.config.ts 保持一致
     "preload": "preload.js" // 固定路径
   },
   "features": [] // ...
