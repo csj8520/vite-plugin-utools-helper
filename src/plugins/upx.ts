@@ -3,8 +3,9 @@ import fs from 'node:fs/promises';
 import { createGzip } from 'node:zlib';
 import { createReadStream, createWriteStream } from 'node:fs';
 
-import { createPackage } from 'asar';
+import { createPackage } from '@electron/asar';
 import { PluginOption, ResolvedConfig } from 'vite';
+
 import { getUtoolsConfig } from '../utils';
 
 const cwd = process.cwd();
